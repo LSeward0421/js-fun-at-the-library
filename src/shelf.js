@@ -12,17 +12,17 @@ function unshelfBook(bookTitle, shelf) {
 }
 }
 
-// function listTitles(shelf) {
-// for (var i = 0; i < shelf.length; i++) {
-
-// }
-// };
-
-
-
-
-
-
+function listTitles(shelf) {
+  var total = ""
+  for (var i = 0; i < shelf.length; i++) {
+    if (i < shelf.length - 1) {
+      total += shelf[i].title + ", "
+    } else {
+      total += shelf[i].title
+    }
+  }
+  return total
+}
 
 
 
